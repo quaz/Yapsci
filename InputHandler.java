@@ -1,0 +1,5 @@
+package yapsci;
+
+class InputHandler {
+    
+}
