@@ -1,51 +1,36 @@
 package yapsci;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.util.HashMap;
 
 public class ConnectionManager {
 
-    HashMap<String, Socket> sockets;
-    String serverId;
+    HashMap<String, Connection> connections;
+    MessageProcessor messageProcessor;
+    String clientId;
 
-    ConnectionManager(String serverId) {
-        this.serverId = serverId;
-        sockets = new HashMap<String, Socket>();
+    ConnectionManager(String clientId, MessageProcessor messageProcessor) {
+        this.clientId = clientId;
+        this.messageProcessor = messageProcessor;
+        connections = new HashMap<String, Connection>();
     }
 
-    void addConnection(Socket socket) {
-        BufferedWriter bw = null;
-        BufferedReader br = null;
-        try {
-            // Init Id Exchange
-            bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-            bw.write(serverId);
-            bw.newLine();
-            bw.flush();
-            br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            String clientId = br.readLine();
-            
-            sockets.put(clientId, socket);
-            initConnection(clientId);
-        } catch (IOException ex) {
-        } finally {
-            try {
-                bw.close();
-            } catch (IOException ex) {
-            }
-            try {
-                br.close();
-            } catch (IOException ex) {
-            }
+    synchronized void addConnection(Socket socket) {
+        Connection connection = new Connection(socket, clientId);
+        connections.put(clientId, connection);
+    }
+
+    void halt() {
+        for (Connection c : connections.values()) {
+            c.halt();
         }
+        connections.clear();
     }
 
-    private void initConnection(String clientId) {
-        // Init Data Exchange
+    void stopConnection(String clientID) {
+        Connection c = connections.get(clientID);
+        if (c != null) {
+            c.halt();
+        }
     }
 }
