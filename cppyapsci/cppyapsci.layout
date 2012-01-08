@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="include/core/inline/network_connector.inl" open="1" top="0" tabpos="2">
+		<Cursor position="416" topLine="0" />
+	</File>
+	<File name="include/core/inline/network_seti.inl" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include/core/inline/socket_reader.inl" open="1" top="1" tabpos="8">
+		<Cursor position="168" topLine="0" />
+	</File>
+	<File name="include/core/network_connector.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="661" topLine="4" />
+	</File>
+	<File name="include/core/network_sender.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="328" topLine="9" />
+	</File>
+	<File name="include/core/network_seti.hpp" open="1" top="0" tabpos="3">
+		<Cursor position="264" topLine="12" />
+	</File>
+	<File name="include/core/socket_creator.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="457" topLine="0" />
+	</File>
+	<File name="include/core/socket_read_writer.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="828" topLine="3" />
+	</File>
+	<File name="include/core/socket_reader.hpp" open="1" top="0" tabpos="7">
+		<Cursor position="1608" topLine="32" />
+	</File>
+	<File name="include/core/socket_writer.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="9" />
+	</File>
+	<File name="src/core/network_connector.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="33" topLine="0" />
+	</File>
+	<File name="src/core/network_sender.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="1102" topLine="0" />
+	</File>
+	<File name="src/core/network_seti.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1179" topLine="18" />
+	</File>
+	<File name="src/core/socket_reader.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="69" topLine="0" />
+	</File>
+	<File name="src/test.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="979" topLine="27" />
+	</File>
+</CodeBlocks_layout_file>

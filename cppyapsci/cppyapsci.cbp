@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cppyapsci" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/cppyapsci" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wfloat-equal" />
+			<Add option="-Wunreachable-code" />
+			<Add option="-std=c++0x" />
+			<Add option="-Wall" />
+			<Add option="-g" />
+			<Add directory="include/core" />
+			<Add directory="include/misc" />
+		</Compiler>
+		<Linker>
+			<Add library="boost_system" />
+			<Add library="boost_thread" />
+			<Add library="pthread" />
+		</Linker>
+		<Unit filename="include/core/inline/network_connector.inl" />
+		<Unit filename="include/core/inline/network_sender.inl" />
+		<Unit filename="include/core/inline/network_seti.inl" />
+		<Unit filename="include/core/inline/socket_creator.inl" />
+		<Unit filename="include/core/inline/socket_read_writer.inl" />
+		<Unit filename="include/core/inline/socket_reader.inl" />
+		<Unit filename="include/core/inline/socket_writer.inl" />
+		<Unit filename="include/core/network_connector.hpp" />
+		<Unit filename="include/core/network_sender.hpp" />
+		<Unit filename="include/core/network_seti.hpp" />
+		<Unit filename="include/core/socket_creator.hpp" />
+		<Unit filename="include/core/socket_read_writer.hpp" />
+		<Unit filename="include/core/socket_reader.hpp" />
+		<Unit filename="include/core/socket_writer.hpp" />
+		<Unit filename="include/misc/creatable.hpp" />
+		<Unit filename="include/misc/function_object.hpp" />
+		<Unit filename="include/misc/inline/creatable.inl" />
+		<Unit filename="include/misc/inline/function_object.inl" />
+		<Unit filename="include/misc/inline/logger.inl" />
+		<Unit filename="include/misc/inline/wrapper.inl" />
+		<Unit filename="include/misc/logger.hpp" />
+		<Unit filename="include/misc/wrapper.hpp" />
+		<Unit filename="src/core/network_connector.cpp" />
+		<Unit filename="src/core/network_sender.cpp" />
+		<Unit filename="src/core/network_seti.cpp" />
+		<Unit filename="src/core/socket_creator.cpp" />
+		<Unit filename="src/core/socket_read_writer.cpp" />
+		<Unit filename="src/core/socket_reader.cpp" />
+		<Unit filename="src/core/socket_writer.cpp" />
+		<Unit filename="src/misc/creatable.cpp" />
+		<Unit filename="src/misc/function_object.cpp" />
+		<Unit filename="src/misc/logger.cpp" />
+		<Unit filename="src/misc/wrapper.cpp" />
+		<Unit filename="src/test.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

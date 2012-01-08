@@ -1,0 +1,146 @@
+# depslib dependency file v1.0
+1325632199 source:/home/cptj/cppyapsci/src/core/network_sender.cpp
+	<network_sender.hpp>
+	<boost/bind.hpp>
+	<logger.hpp>
+
+1325540086 /home/cptj/cppyapsci/include/core/network_sender.hpp
+	<boost/asio.hpp>
+	<string>
+	<wrapper.hpp>
+	<function_object.hpp>
+	<boost/smart_ptr.hpp>
+	<boost/enable_shared_from_this.hpp>
+	<creatable.hpp>
+	<socket_creator.hpp>
+	"inline/network_sender.inl"
+
+1324930448 /home/cptj/cppyapsci/include/misc/wrapper.hpp
+	"inline/wrapper.inl"
+
+1324931289 /home/cptj/cppyapsci/include/misc/inline/wrapper.inl
+
+1325528677 /home/cptj/cppyapsci/include/misc/function_object.hpp
+	<inline/function_object.inl>
+
+1325528692 /home/cptj/cppyapsci/include/misc/inline/function_object.inl
+
+1325550808 /home/cptj/cppyapsci/include/misc/creatable.hpp
+	"inline/creatable.inl"
+
+1325527853 /home/cptj/cppyapsci/include/misc/inline/creatable.inl
+
+1325631034 /home/cptj/cppyapsci/include/core/socket_creator.hpp
+	<boost/smart_ptr.hpp>
+	<boost/asio.hpp>
+	<function_object.hpp>
+	"inline/socket_creator.inl"
+
+1324950782 /home/cptj/cppyapsci/include/core/inline/socket_creator.inl
+	<logger.hpp>
+
+1325554722 /home/cptj/cppyapsci/include/misc/logger.hpp
+	"inline/logger.inl"
+
+1324932159 /home/cptj/cppyapsci/include/misc/inline/logger.inl
+	<iostream>
+
+1324949706 /home/cptj/cppyapsci/include/core/inline/network_sender.inl
+
+1324939662 source:/home/cptj/cppyapsci/src/core/socket_creator.cpp
+	<socket_creator.hpp>
+
+1324861814 source:/home/cptj/cppyapsci/src/core/socket_read_writer.cpp
+	<socket_read_writer.hpp>
+
+1325631772 /home/cptj/cppyapsci/include/core/socket_read_writer.hpp
+	<socket_writer.hpp>
+	<socket_reader.hpp>
+	<creatable.hpp>
+	"inline/socket_read_writer.inl"
+
+1324943398 /home/cptj/cppyapsci/include/core/socket_writer.hpp
+	<string>
+	<boost/bind.hpp>
+	<boost/shared_ptr.hpp>
+	<boost/enable_shared_from_this.hpp>
+	<boost/asio.hpp>
+	<queue>
+	<wrapper.hpp>
+	<creatable.hpp>
+	"inline/socket_writer.inl"
+
+1324942621 /home/cptj/cppyapsci/include/core/inline/socket_writer.inl
+
+1325708814 /home/cptj/cppyapsci/include/core/socket_reader.hpp
+	<boost/smart_ptr.hpp>
+	<boost/asio.hpp>
+	<boost/array.hpp>
+	<function_object.hpp>
+	<wrapper.hpp>
+	<creatable.hpp>
+	"inline/socket_reader.inl"
+
+1325708840 /home/cptj/cppyapsci/include/core/inline/socket_reader.inl
+	<boost/bind.hpp>
+	<logger.hpp>
+
+1325544025 /home/cptj/cppyapsci/include/core/inline/socket_read_writer.inl
+
+1324932005 source:/home/cptj/cppyapsci/src/core/socket_reader.cpp
+	<socket_reader.hpp>
+
+1324931807 source:/home/cptj/cppyapsci/src/core/socket_writer.cpp
+	<socket_writer.hpp>
+	<logger.hpp>
+
+1324942247 source:/home/cptj/cppyapsci/src/misc/creatable.cpp
+	<creatable.hpp>
+
+1324854468 source:/home/cptj/cppyapsci/src/misc/function_object.cpp
+	<function_object.hpp>
+
+1324932155 source:/home/cptj/cppyapsci/src/misc/logger.cpp
+	<logger.hpp>
+
+1324929823 source:/home/cptj/cppyapsci/src/misc/wrapper.cpp
+	<wrapper.hpp>
+
+1325632126 source:/home/cptj/cppyapsci/src/test.cpp
+	<socket_read_writer.hpp>
+	<network_connector.hpp>
+	<logger.hpp>
+	<boost/asio.hpp>
+	<iostream>
+
+1325632074 source:/home/cptj/cppyapsci/src/core/network_seti.cpp
+	<network_seti.hpp>
+	<logger.hpp>
+	<boost/bind.hpp>
+
+1325548913 /home/cptj/cppyapsci/include/core/network_seti.hpp
+	<creatable.hpp>
+	<wrapper.hpp>
+	<socket_creator.hpp>
+	<boost/smart_ptr.hpp>
+	<boost/enable_shared_from_this.hpp>
+	<boost/asio.hpp>
+	<map>
+	<tuple>
+	"inline/network_seti.inl"
+
+1325549087 /home/cptj/cppyapsci/include/core/inline/network_seti.inl
+
+1325631585 source:/home/cptj/cppyapsci/src/core/network_connector.cpp
+	<network_connector.hpp>
+
+1325631705 /home/cptj/cppyapsci/include/core/network_connector.hpp
+	<network_sender.hpp>
+	<network_seti.hpp>
+	<boost/smart_ptr.hpp>
+	<socket_creator.hpp>
+	<creatable.hpp>
+	"inline/network_connector.inl"
+
+1325631990 /home/cptj/cppyapsci/include/core/inline/network_connector.inl
+
